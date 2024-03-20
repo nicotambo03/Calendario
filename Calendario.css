@@ -1,0 +1,205 @@
+
+@font-face {
+    font-family: titolo;
+    src: url('./Qotho\ W01\ Dark\ Condensed.ttf');
+}
+
+@font-face {
+    font-family: sottotitolo;
+    src: url('./arial_narrow_7.ttf');
+}
+
+body{
+    margin:0;
+}
+
+.impaginazione{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+
+.immagine{
+    width: 30%;
+    overflow: hidden;
+    max-height: 100%;
+    background-image: url('https://img.pikbest.com/backgrounds/20190212/vector-cartoon-spring-day-forest-distant-mountain-landscape_1860700.jpg!sw800');
+    color: rgb(69, 71, 71);
+    font-size: 15vh;
+    font-family: titolo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sottotitolo{
+    font-size: 4vh; 
+    font-family: sottotitolo; 
+    font-weight: lighter;
+}
+
+.calendario{
+    margin: 5vh;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.righe{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.mese{
+    width: 50%;
+    text-align: left;
+    font-family: titolo;
+    font-size: 8vh;
+    color: rgb(69, 71, 71);
+}
+
+.numeromese{
+    width: 50%;
+    text-align: right;
+    font-family: sottotitolo;
+    font-size: 8vh;
+    color: rgb(69, 71, 71);
+}
+
+.giorni{
+    width: 14.285714%;
+    text-align: center;
+    border-radius: 5%;
+    margin: 1vh;
+    color: rgb(69, 71, 71);
+    font-family: sottotitolo;
+    font-size: 4vh;
+    background-color: rgb(98,154,180);
+}
+
+.numeri{
+    width: 14.285714%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    border: 2px solid rgb(98,154,180);
+    color: rgb(69, 71, 71);
+    font-family: sottotitolo;
+    margin: 1vh;
+    font-size: 5vh;
+    background-color: white;
+}
+
+.numeri:hover, .numeri:focus{
+    background-color: rgb(98,154,180);
+}
+
+.numeri:active{
+    background-color: rgb(50,90,108);
+    border: 2px solid rgb(50,90,108);
+}
+
+@media (max-width: 982px) {
+
+    body{
+        margin:0;
+    }
+
+    .impaginazione{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .numeri{
+        font-size: 3vh;
+        height: 8vh;
+    }
+
+    .giorni{
+        font-size: 3vh;
+    }
+
+    .mese{
+        font-size: 6vh;
+    }
+
+    .numeromese{
+        font-size: 6vh;
+    }
+
+    .immagine{
+        width: 70%;
+        font-size: 8vh;
+        margin-top: 2vh;
+        height: 30vh;
+        background-repeat: no-repeat;
+    }
+
+    .sottotitolo{
+        margin-top: 0.5vh;
+        font-size: 3vh;
+    }
+
+    .calendario{
+        margin: 2vh;
+    }
+}
+
+@media (max-width: 590px) {
+
+    body{
+        margin:0;
+    }
+
+    .impaginazione{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .numeri{
+        font-size: 2vh;
+        height: 6vh;
+    }
+
+    .giorni{
+        font-size: 2vh;
+    }
+
+    .mese{
+        font-size: 6vh;
+    }
+
+    .numeromese{
+        font-size: 6vh;
+    }
+
+    .immagine{
+        width: 70%;
+        font-size: 8vh;
+        margin-top: 2vh;
+        height: 30vh;
+        background-repeat: no-repeat;
+    }
+
+    .sottotitolo{
+        margin-top: 0.5vh;
+        font-size: 3vh;
+    }
+
+    .calendario{
+        margin: 2vh;
+    }
+}
