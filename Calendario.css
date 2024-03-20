@@ -106,6 +106,7 @@ body{
 
 .numeri[hidden] {
     pointer-events: none;
+    border: none;
 }
 
 @media (max-width: 982px) {
@@ -157,9 +158,6 @@ body{
         margin: 2vh;
     }
 
-    .numeri[hidden] {
-        pointer-events: none;
-    }
 }
 
 @media (max-width: 590px) {
@@ -211,7 +209,4 @@ body{
         margin: 2vh;
     }
 
-    .numeri[hidden] {
-        pointer-events: none;
-    }
 }
