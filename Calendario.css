@@ -104,6 +104,10 @@ body{
     border: 2px solid rgb(50,90,108);
 }
 
+.numeri[hidden] {
+    pointer-events: none;
+}
+
 @media (max-width: 982px) {
 
     body{
@@ -151,6 +155,10 @@ body{
 
     .calendario{
         margin: 2vh;
+    }
+
+    .numeri[hidden] {
+        pointer-events: none;
     }
 }
 
@@ -201,5 +209,9 @@ body{
 
     .calendario{
         margin: 2vh;
+    }
+
+    .numeri[hidden] {
+        pointer-events: none;
     }
 }
